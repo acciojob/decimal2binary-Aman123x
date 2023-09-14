@@ -7,8 +7,14 @@ function decimalToBinary(num) {
 		num=Math.floor(num/2);
 		i++;
 	}
-	for (let j = i - 1; j >= 0; j--)
-        document.write(bin[j]);
+	let j=0;
+	i=i-1;
+	while(j<i){
+		let temp=bin[i];
+		bin[i]=bin[j];
+		bin[j]=temp;
+	} 
+	return bin;
 }
 
 window.decimalToBinary = decimalToBinary;
