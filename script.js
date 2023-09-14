@@ -13,6 +13,8 @@ function decimalToBinary(num) {
 		let temp=bin[i];
 		bin[i]=bin[j];
 		bin[j]=temp;
+		i--;
+		j++;
 	} 
 	return bin;
 }
