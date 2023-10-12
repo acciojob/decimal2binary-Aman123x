@@ -16,7 +16,8 @@ function decimalToBinary(num) {
 		i--;
 		j++;
 	} 
-	return bin;
+	let text=bin.toString();
+	return text;
 }
 
 window.decimalToBinary = decimalToBinary;
